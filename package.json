@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/Nicklzy/react-ui-wheel#readme",
   "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.5.1",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.7.0"
   }
 }
