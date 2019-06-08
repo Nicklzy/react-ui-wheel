@@ -4,3 +4,7 @@ import Button from "./button";
 
 console.log(React)
 ReactDOM.render(<Button/>,document.body)
+
+export default {
+    Button
+}
