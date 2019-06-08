@@ -1,3 +1,6 @@
-const div = document.createElement('div')
-div.innerText = 'tsx设置'
-document.body.append(div)
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Button from "./button";
+
+console.log(React)
+ReactDOM.render(<Button/>,document.body)

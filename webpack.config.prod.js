@@ -1,5 +1,7 @@
 const path = require('path');
-module.exports = {
+const base = require('./webpack.config')
+module.exports = Object.assign({}, base, {
+    mode: 'production',
     entry: {
         index: './lib/index.tsx'
     },
@@ -14,4 +16,4 @@ module.exports = {
     module: {
         rules: [{test: /\.tsx?$/, loader: 'awesome-typescript-loader'}]
     },
-}
+})
