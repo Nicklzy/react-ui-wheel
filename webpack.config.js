@@ -15,6 +15,7 @@ module.exports = {
         rules: [
             {test: /\.tsx?$/, loader: 'awesome-typescript-loader'},
             {test: /\.svg$/, loader: 'svg-sprite-loader'},
+            {test: /\.s[ac]ss$/, use: ['style-loader','css-loader','sass-loader'],}
         ]
     },
 }
