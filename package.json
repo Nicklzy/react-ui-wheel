@@ -1,6 +1,6 @@
 {
-  "name": "LZYUI",
-  "version": "1.0.0",
+  "name": "lzy-ui",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index",
@@ -10,6 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.prod.js",
     "ci": "cross-env NODE_ENV=test JEST_JUNIT_OUTPUT=./test-results/jest/results.xml jest --config=jest.config.js"
   },
+  "files": ["/dist/**/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nicklzy/react-ui-wheel.git"
