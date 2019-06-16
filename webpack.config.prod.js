@@ -13,7 +13,4 @@ module.exports = Object.assign({}, base, {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
-    module: {
-        rules: [{test: /\.tsx?$/, loader: 'awesome-typescript-loader'}]
-    },
 })
