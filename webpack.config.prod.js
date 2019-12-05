@@ -5,12 +5,18 @@ module.exports = Object.assign({}, base, {
     entry: {
         index: './lib/index.tsx'
     },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        library: 'LZYUI',
-        libraryTarget: 'umd',
-    },
-    resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-    },
+    externals: {
+        'react':{
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            Root: 'React',
+        },
+        'react-dom': {
+            commonjs: 'react-dom',
+            commonjs2: 'react-dom',
+            amd: 'react-dom',
+            Root: 'ReactDOM',
+        }
+    }
 })
